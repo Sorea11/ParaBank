@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.929">
+<testcase classname="Verify login functionality" name="Verify login functionality with valid data" time="3.435">
+<failure message="session not created: This version of ChromeDriver only supports Chrome version 115&#10;Current browser version is 121.0.6167.161 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'P323', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;GetHandleVerifier [0x00007FF66A3E4A62+57106]&#10;&#9;(No symbol) [0x00007FF66A35CF52]&#10;&#9;(No symbol) [0x00007FF66A22E2CB]&#10;&#9;(No symbol) [0x00007FF66A259FDB]&#10;&#9;(No symbol) [0x00007FF66A254F8D]&#10;&#9;(No symbol) [0x00007FF66A2530AA]&#10;&#9;(No symbol) [0x00007FF66A28E3F7]&#10;&#9;(No symbol) [0x00007FF66A28DF60]&#10;&#9;(No symbol) [0x00007FF66A286793]&#10;&#9;(No symbol) [0x00007FF66A25CE81]&#10;&#9;(No symbol) [0x00007FF66A25E064]&#10;&#9;GetHandleVerifier [0x00007FF66A694222+2873042]&#10;&#9;GetHandleVerifier [0x00007FF66A6E6590+3209792]&#10;&#9;GetHandleVerifier [0x00007FF66A6DF3AF+3180639]&#10;&#9;GetHandleVerifier [0x00007FF66A475F25+652245]&#10;&#9;(No symbol) [0x00007FF66A368618]&#10;&#9;(No symbol) [0x00007FF66A3647C4]&#10;&#9;(No symbol) [0x00007FF66A3648BC]&#10;&#9;(No symbol) [0x00007FF66A354C33]&#10;&#9;BaseThreadInitThunk [0x00007FFC5C6E7344+20]&#10;&#9;RtlUserThreadStart [0x00007FFC5C9226B1+33]&#10;" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given user navigate to ui...................................................failed
+When user introduce the pass and login......................................skipped
+And user click the submit button............................................skipped
+Then user is redirect to home page..........................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 115
+Current browser version is 121.0.6167.161 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'P323', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00007FF66A3E4A62+57106]
+	(No symbol) [0x00007FF66A35CF52]
+	(No symbol) [0x00007FF66A22E2CB]
+	(No symbol) [0x00007FF66A259FDB]
+	(No symbol) [0x00007FF66A254F8D]
+	(No symbol) [0x00007FF66A2530AA]
+	(No symbol) [0x00007FF66A28E3F7]
+	(No symbol) [0x00007FF66A28DF60]
+	(No symbol) [0x00007FF66A286793]
+	(No symbol) [0x00007FF66A25CE81]
+	(No symbol) [0x00007FF66A25E064]
+	GetHandleVerifier [0x00007FF66A694222+2873042]
+	GetHandleVerifier [0x00007FF66A6E6590+3209792]
+	GetHandleVerifier [0x00007FF66A6DF3AF+3180639]
+	GetHandleVerifier [0x00007FF66A475F25+652245]
+	(No symbol) [0x00007FF66A368618]
+	(No symbol) [0x00007FF66A3647C4]
+	(No symbol) [0x00007FF66A3648BC]
+	(No symbol) [0x00007FF66A354C33]
+	BaseThreadInitThunk [0x00007FFC5C6E7344+20]
+	RtlUserThreadStart [0x00007FFC5C9226B1+33]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.LoginSteps.navigateToUi(LoginSteps.java:18)
+	at ✽.user navigate to ui(file:///D:/sorin/AtfTest/AtfTest/src/test/resources/features/Test_login_functionality.feature:5)
+]]></failure>
+</testcase>
+</testsuite>
